@@ -11,10 +11,9 @@ ${row}      1
 *** Tasks ***
 Main Task2
     States Test Website 2
+
 Main Task1
     States Test Website 1
-
-
 
 
 *** Keywords ***
@@ -139,7 +138,7 @@ Creating Pa Excel File For Webiste 2
     Set Log Level    info
 
 States Test Website 1
-    Open Available Browser    url=https://eddy.truefair.news/President/General/2020/state/    maximized=True
+    Open Chrome Browser    url=https://eddy.truefair.news/President/General/2020/state/    maximized=True
     Sleep    3s
     Wait Until Element Is Visible    //*[@id="map"]/div[2]/div[4]/div    timeout=20s
     ${count}=    Get Element Count    //*[@id="map"]/div[2]/div[4]/div
@@ -161,7 +160,7 @@ States Test Website 1
     END
 
 States Test Website 2
-    Open Available Browser    url=https://rewrite--eddyv3.netlify.app/    maximized=True
+    Open Chrome Browser    url=https://rewrite--eddyv3.netlify.app/    maximized=True
     Sleep    3s
     Wait Until Element Is Visible    //*[@id="map"]/div[1]/div[4]/div    timeout=20s
     ${count}=    Get Element Count    //*[@id="map"]/div[1]/div[4]/div

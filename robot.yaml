@@ -1,8 +1,8 @@
 tasks:
-  Main Task1:
-    robotTaskName: Main Task1
   Main Task2:
     robotTaskName: Main Task2
+  Main Task1:
+    robotTaskName: Main Task1
 condaConfigFile: conda.yaml
 ignoreFiles:
 - .gitignore
